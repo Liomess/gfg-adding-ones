@@ -1,0 +1,7 @@
+class Solution:
+    def update(self, a, n, updates, k):
+        for i in range(k):
+            idx=updates[i]-1
+            for j in range(idx,n):
+                a[j]+=1
+        return a
